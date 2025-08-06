@@ -1,0 +1,18 @@
+{
+  "name": "warglace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "client": "npm run dev --prefix client",
+    "server": "npm start server",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Warglace Project",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
