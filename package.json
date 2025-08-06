@@ -1,12 +1,11 @@
 {
   "name": "warglace",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "npm run start --prefix server",
     "client": "npm run dev --prefix client",
-    "server": "npm start server",
-    "dev": "concurrently \"npm run client\" \"npm run server\""
+    "dev": "concurrently \"npm run client\" \"npm run start --prefix server\""
   },
   "keywords": [],
   "author": "",
