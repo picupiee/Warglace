@@ -11,7 +11,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@prisma/client": "^6.13.0"
+    "@prisma/client": "^6.13.0",
+    "twilio": "^5.8.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",

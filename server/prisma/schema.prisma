@@ -20,6 +20,7 @@ model Sellers {
   whatsapp_number   String      @unique @db.VarChar(20)
   store_description String?
   created_at        DateTime    @default(now())
+  state             String      @default("Unregistered")
 
   //Relationship to product
   products          Product[]
@@ -31,7 +32,7 @@ model Product {
   price             Int
   description       String?
   image_url         String?     @db.VarChar(255)
-  status            String      @default("available") @db.VarChar(50)
+  isAvailable       Boolean     @default(true)
   created_at        DateTime    @default(now())
 
   // Relationship to the Sellers
