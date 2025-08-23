@@ -6,6 +6,6 @@ My goal is to make the seller **<ins>feel at ease with their store and how to ma
 
 ## **Basically a Chat Group Marketplace Turned into Marketplace Web**
 
-This web app will have the capability of making store, listing product and all other things ***just by communicate with my bot's service communication*** handled by **Whatsapp's Business API** and _BPS_ (for simple configuration and maintain).
+This web app will have the capability of making store, listing product and all other things ***just by communicate with the bot's service communication*** handled by **Whatsapp's Business API** and _BPS_ (for simple configuration and maintain).
 
 Seller will first chatting with my bot, then my bot will giving instruction for the seller to give their store's name. After that, the bot will give a menu for managing product like add a new product, edit or delete product. Each menu will have to have a full guide, but with a **minimum steps and easy to understand.**
