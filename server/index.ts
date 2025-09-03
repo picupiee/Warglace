@@ -61,10 +61,10 @@ app.post('/api/whatsapp', async (req, res) => {
             },
         });
 
-        twiml.message(`🎊🎊 Selamat! Tokomu yang bernama *_${incomingMessage}_* telah selesai dibuat 🎊🎊\nSekarang kamu bisa menambah produk ke tokomu. Kirimkan nama produk, foto produk, harga produk dan deskripsi produk secara berurutan.`)
+        twiml.message(`🎊🎊 Selamat! Tokomu yang bernama *_${incomingMessage}_* telah selesai dibuat 🎊🎊\nSekarang kamu bisa menambah produk ke tokomu. Kirimkan nama produk, foto produk, harga produk dan deskripsi produk secara berurutan.\n\nUntuk selanjutnya, kirim pesan "Menu" untuk mengelola tokomu.`)
         console.log(`Store name updated for ${from}: ${incomingMessage}`)
     } else {
-        twiml.message(`Selamat datang! Ada yang bisa saya bantu ?\n\n🔽 Silahkan pilih menu dibawah ini 🔽\n1️⃣ Daftar Produk\n2️⃣ Ubah Produk\n3️⃣ Ubah Stok Produk\n❓ Butuh Bantuan ?`)
+        twiml.message(`Selamat datang! Ada yang bisa saya bantu ?\n\nUntuk melanjutkan, ketik dan kirim angka sesuai menu yang ingin diakses:\n\n🔽 Silahkan pilih menu dibawah ini 🔽\n1️⃣ Daftar Produk\n2️⃣ Ubah Produk\n3️⃣ Ubah Stok Produk\n4 Butuh Bantuan ?`)
     }
 
     res.writeHead(200, { 'content-type': 'text/xml'});
