@@ -12,6 +12,8 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^6.15.0",
+    "axios": "^1.11.0",
+    "cloudinary": "^2.7.0",
     "twilio": "^5.8.0"
   },
   "devDependencies": {
